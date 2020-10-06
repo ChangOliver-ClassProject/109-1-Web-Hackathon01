@@ -66,6 +66,15 @@ body > h1{
     vertical-align: top;
 }
 
+.date:hover{
+    background-color: rgba(0, 0, 0, 0.103);
+}
+
+.selected{
+    background-color: #000000;
+    color: #ffffff;
+}
+
 /*****************Themes*****************/
 .Theme-black {
     --main: black;
