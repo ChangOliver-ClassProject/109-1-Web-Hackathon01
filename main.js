@@ -16,14 +16,13 @@ for (var i = 0; i < cells.length; i++) {
         prev_selected = e.target;
     });
     cells[i].appendChild(document.createElement("br"));
-    cells[i].appendChild(document.createTextNode(""));
+    cells[i].appendChild(document.createElement("h2"));
 }
 
 var addEvent = function() {
 	var selected = document.getElementsByClassName("selected");
-	console.log(selected[0].childNodes)
-	selected[0].childNodes[2].nodeValue = input.value;
-	//selected[0].childNodes[2].style.color = color.value;
+	selected[0].childNodes[2].innerText = input.value;
+	selected[0].childNodes[2].style.color = color.value;
 	input.value = '';
 }
 
