@@ -8,7 +8,6 @@ color.value = '#b0b0b0'
 var prev_selected = cells[0];
 cells[0].classList.add("selected");
 var selected = document.getElementsByClassName("selected");
-console.log(selected);
 
 for (var i = 0; i < cells.length; i++) {
     cells[i].addEventListener("click", function(e) {
@@ -16,20 +15,19 @@ for (var i = 0; i < cells.length; i++) {
         e.target.classList.add("selected");
         prev_selected = e.target;
     });
+    cells[i].appendChild(document.createTextNode('\n'));
 }
 
-var addEvent = function(value) {
+var addEvent = function() {
 	var selected = document.getElementsByClassName("selected");
-	//var text = document.createTextNode(value);
-	console.log(value);
-	console.log(selected.innerText);
-	selected.innerText = "value";
-
+	console.log(selected[0].childNodes)
+	selected[0].childNodes[1].nodeValue = '\n' + input.value;
+	selected[0].childNodes[1].style.color = color.value;
 }
 
 input.addEventListener("keyup", function(e) {
 	if (e.keyCode === 13 && e.target.value !== ''){
-		addEvent(e.target.value);
+		addEvent();
 		e.target.value = '';
 	}	
 })
