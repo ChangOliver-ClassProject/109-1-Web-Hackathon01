@@ -38,8 +38,8 @@ https://github.com/VivianChan1998/109-1WebProg-Hackathon01-boilerPlate
 ## Checkpoints
 0. **Important Warnings: DO NOT change the class names, id names, and variable names that are already defined.**
 1. Make the calendar into 4 weeks. (10%)
-2. Change the color of a cell to black(`#000000`) when they are hovered. (20%)
-3. Change the color of a cell to `rgba(0, 0, 0, 0.103)` after they are clicked. (30%)
+2. Change the color of a cell to `rgba(0, 0, 0, 0.103)` when they are hovered. (20%)
+3. Change the color of a cell to black(`#000000`) after they are clicked. (30%)
 4. When the user types something and clicks the "Add to calendar" button, store the text content in the cell that is currently selected. (35%)
 5. Add text to cell when the key "Enter" is pressed. (5%)
 
