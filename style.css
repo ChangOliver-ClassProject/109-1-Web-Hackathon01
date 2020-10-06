@@ -18,10 +18,10 @@ body > h1{
     text-align: center;
     color: var(--main);
 }
-body > h2{
+h2{
     font-family: 'Fredoka One', cursive;
-    text-align: center;
-    font-size: 8px;
+    text-align: left;
+    font-size: 18px;
 }
 
 #cal-input, #cal-color, #cal-button{
