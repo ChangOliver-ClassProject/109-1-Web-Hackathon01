@@ -15,20 +15,21 @@ for (var i = 0; i < cells.length; i++) {
         e.target.classList.add("selected");
         prev_selected = e.target;
     });
-    cells[i].appendChild(document.createTextNode('\n'));
+    cells[i].appendChild(document.createElement("br"));
+    cells[i].appendChild(document.createTextNode(""));
 }
 
 var addEvent = function() {
 	var selected = document.getElementsByClassName("selected");
 	console.log(selected[0].childNodes)
-	selected[0].childNodes[1].nodeValue = '\n' + input.value;
-	selected[0].childNodes[1].style.color = color.value;
+	selected[0].childNodes[2].nodeValue = input.value;
+	//selected[0].childNodes[2].style.color = color.value;
+	input.value = '';
 }
 
 input.addEventListener("keyup", function(e) {
 	if (e.keyCode === 13 && e.target.value !== ''){
 		addEvent();
-		e.target.value = '';
 	}	
 })
 

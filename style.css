@@ -18,6 +18,11 @@ body > h1{
     text-align: center;
     color: var(--main);
 }
+body > p{
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+}
+
 #cal-input, #cal-color, #cal-button{
     height: 5vh;
     display: inline-block;
@@ -112,6 +117,15 @@ body > h1{
     --bg-1: 255,177,123;
 }
 
+.Theme-self {
+    --main: rgb(255, 128, 128);
+    --box: rgba(88,12,14, 0.932);
+    --text: rgb(88,12,14);
+    --hover: rgba(0, 0, 0, 0.103);
+    --bg-0: 88,12,14;
+    --bg-1: 200,130,100;
+}
+
 .ChooseTheme{
     width: 30px;
     height: 30px;
@@ -124,3 +138,4 @@ body > h1{
 #Theme-red{ background-color:rgba(215, 95, 93, 0.5); }
 #Theme-blue{ background-color: rgba(93, 215, 209, 0.5); }
 #Theme-purple{ background-color: rgba(49,46,140, 0.5); }
+#Theme-self{ background-color: rgba(88,12,14, 0.5); }
